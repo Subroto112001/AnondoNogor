@@ -17,50 +17,78 @@ tailwind.config = {
   },
 };
 
-// script to load header and footer
 // Function to load HTML components
 async function loadComponent(elementId, filePath) {
-  const element = document.getElementById(elementId);
-  if (!element) return; // Exit if the ID doesn't exist on this page
+    const element = document.getElementById(elementId);
+    if (!element) return;
 
-  try {
-    const response = await fetch(filePath);
-    if (response.ok) {
-      const content = await response.text();
-      element.innerHTML = content;
-    } else {
-      console.error(`Error loading ${filePath}: ${response.statusText}`);
+    try {
+        const response = await fetch(filePath);
+        if (response.ok) {
+            const content = await response.text();
+            element.innerHTML = content;
+        } else {
+            console.error(`Error loading ${filePath}: ${response.statusText}`);
+        }
+    } catch (error) {
+        console.error(`Fetch error: ${error}`);
     }
-  } catch (error) {
-    console.error(`Fetch error: ${error}`);
-  }
 }
 
+// মোবাইল মেনু টগল ফাংশন
+function setupMobileMenu() {
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const toggleIcon = document.getElementById('toggle-icon');
+
+    // ইভেন্ট লিসেনার যোগ করার আগে চেক করে নেওয়া
+    if (toggleBtn && mobileMenu && toggleIcon) {
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            
+            // আইকন পরিবর্তন logic
+            if (isHidden) {
+                toggleIcon.classList.remove('fa-xmark');
+                toggleIcon.classList.add('fa-bars-staggered');
+            } else {
+                toggleIcon.classList.remove('fa-bars-staggered');
+                toggleIcon.classList.add('fa-xmark');
+            }
+        });
+    }
+}
+
+// একটিভ লিঙ্ক সেট করার ফাংশন
 function setActiveNavLink() {
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
-  const navLinks = document.querySelectorAll("nav a");
+    // বর্তমান পাথ ক্লিন করা (যেমন: /features.html থেকে features.html)
+    let currentPath = window.location.pathname.split("/").pop();
+    if (currentPath === "" || currentPath === "/") currentPath = "index.html";
 
-  navLinks.forEach((link) => {
-    const linkPath = link.getAttribute("href").split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
 
-    if (linkPath === currentPath) {
-      // একটিভ কালার এবং বর্ডার যোগ করা হচ্ছে
-      link.classList.add("text-primary", "border-primary");
-      link.classList.remove("text-forest-green", "border-transparent");
-    } else {
-      // অন্য লিঙ্কগুলো থেকে একটিভ ক্লাস সরানো হচ্ছে
-      link.classList.remove("text-primary", "border-primary");
-      link.classList.add("text-forest-green", "border-transparent");
-    }
-  });
+    navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        if (!href) return;
+        
+        const linkPath = href.split("/").pop();
+
+        if (linkPath === currentPath) {
+            link.classList.add("text-primary", "border-primary");
+            link.classList.remove("text-forest-green", "border-transparent");
+        } else {
+            link.classList.remove("text-primary", "border-primary");
+            link.classList.add("text-forest-green", "border-transparent");
+        }
+    });
 }
 
-// DOMContentLoaded ইভেন্টে পরিবর্তন
+// DOMContentLoaded ইভেন্ট
 document.addEventListener("DOMContentLoaded", async () => {
-  // হেডার লোড হওয়া পর্যন্ত অপেক্ষা করতে await ব্যবহার করা হয়েছে
-  await loadComponent("main-header", "components/header.html");
-  await loadComponent("main-footer", "components/footer.html");
+    // পাথ অনুযায়ী কম্পোনেন্ট লোড করা
+    await loadComponent("main-header", "components/header.html");
+    await loadComponent("main-footer", "components/footer.html");
 
-  // হেডার লোড হওয়ার পর একটিভ লিঙ্ক সেট করা হচ্ছে
-  setActiveNavLink();
+    // কম্পোনেন্ট লোড হওয়ার পর ফাংশন কল করা
+    setupMobileMenu();
+    setActiveNavLink();
 });

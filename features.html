@@ -13,157 +13,243 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="./assets/js/global.js"></script>
-    
+    <script src="./assets/js/global.js"></script>
+
     <style>
         @layer base {
             body {
-                @apply font-body;
+                /* আপনার পছন্দমতো Noto Serif Bengali সেট করা হয়েছে */
+                font-family: 'Noto Serif Bengali', serif;
             }
 
-            /* প্রিমিয়াম বর্ডার রেডিয়াস */
             .rounded-premium {
                 border-radius: 1.5rem;
             }
         }
 
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
         .ride-card {
-            @apply border border-forest-green/10 transition-all duration-300;
+            @apply border border-forest-green/10 transition-all duration-500 bg-white dark:bg-gray-900;
         }
 
         .ride-card:hover {
-            @apply shadow-2xl transform -translate-y-2 border-accent;
+            @apply shadow-[0_20px_50px_rgba(26, 67, 50, 0.15)] -translate-y-2 border-primary/30;
+        }
+
+        /* মসৃণ অ্যানিমেশনের জন্য */
+        .filter-btn-active {
+            @apply bg-primary text-white border-primary shadow-lg;
         }
     </style>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white min-h-screen">
-<div id="main-header"></div>
+<body class="bg-background-light dark:bg-gray-950 text-forest-green dark:text-white min-h-screen">
 
+    <div id="main-header"></div>
 
-    <main class="max-w-[1280px] mx-auto px-6 lg:px-20 py-12">
-        <div class="mb-12 border-l-8 border-accent pl-8 py-2">
-            <h2 class="text-5xl lg:text-6xl font-black text-primary dark:text-white leading-tight">সকল ফিচার ও রাইড</h2>
-            <p class="mt-4 text-forest-green/70 dark:text-white/70 max-w-2xl text-lg">
-                আমাদের ঐতিহ্যবাহী থিম এবং প্রাকৃতিক সৌন্দর্যের এক অপূর্ব সমন্বয় উপভোগ করুন। হাই-থ্রিল রাইড থেকে শুরু করে
-                শান্ত প্রকৃতির সান্নিধ্য—সবই আছে এখানে।
+    <main class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16">
+
+        <div class="mb-16 border-l-[10px] border-saffron-yellow pl-8 py-3">
+            <h2 class="text-4xl lg:text-6xl font-black text-forest-green dark:text-white leading-tight">
+                সকল ফিচার ও রাইড
+            </h2>
+            <p class="mt-6 text-forest-green/70 dark:text-white/60 max-w-2xl text-lg lg:text-xl leading-relaxed">
+                আমাদের ঐতিহ্যবাহী থিম এবং প্রাকৃতিক সৌন্দর্যের এক অপূর্ব সমন্বয় উপভোগ করুন। হাই-থ্রিল রাইড থেকে শুরু
+                করে শান্ত প্রকৃতির সান্নিধ্য—সবই আছে এখানে।
             </p>
         </div>
 
-        <div class="flex flex-wrap gap-3 mb-12">
-            <button
-                class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold border border-primary">সবগুলো</button>
-            <button
-                class="bg-white text-primary px-6 py-2 rounded-full text-sm font-bold border border-forest-green/20 hover:bg-accent hover:border-accent transition-all">থ্রিল
-                রাইডস</button>
-            <button
-                class="bg-white text-primary px-6 py-2 rounded-full text-sm font-bold border border-forest-green/20 hover:bg-accent hover:border-accent transition-all">ফ্যামিলি
-                ফান</button>
-            <button
-                class="bg-white text-primary px-6 py-2 rounded-full text-sm font-bold border border-forest-green/20 hover:bg-accent hover:border-accent transition-all">ওয়াটার
-                রাইডস</button>
-            <button
-                class="bg-white text-primary px-6 py-2 rounded-full text-sm font-bold border border-forest-green/20 hover:bg-accent hover:border-accent transition-all">কিডস
-                জোন</button>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="ride-card flex flex-col bg-white dark:bg-background-dark rounded-premium overflow-hidden group">
-                <div class="relative aspect-video overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- number 1 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
                         style='background-image: url("./image/AnondoNogor7.webp");'></div>
-                    <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full text-xs font-bold">
-                        হাই থ্রিল</div>
+
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-black mb-3">অ্যাডভেঞ্চার রোলারকোস্টার</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-6 leading-relaxed">রোমাঞ্চকর ট্রিপল লুপ এবং
-                        খাড়া ড্রপ সম্বলিত আমাদের সবচেয়ে জনপ্রিয় স্টিল কোস্টার।</p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-accent">groups</span>
-                            <span class="text-xs font-bold">১২+ বছর</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-forest-green dark:text-accent">schedule</span>
-                            <span class="text-xs font-bold">১০:০০ - ০৬:০০</span>
-                        </div>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        অ্যাডভেঞ্চার রোলারকোস্টার</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        রোমাঞ্চকর ট্রিপল লুপ এবং খাড়া ড্রপ সম্বলিত আমাদের সবচেয়ে জনপ্রিয় স্টিল কোস্টার।
+                    </p>
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                       <div class="flex gap-2 items-center">
+                        <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                       </div>
+                       <div class="flex flex-col gap-2"><div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                        <i class="fa-solid fa-users text-primary"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                        <i class="fa-solid fa-clock text-primary"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                    </div></div>
                     </div>
                 </div>
             </div>
-
-            <div class="ride-card flex flex-col bg-white dark:bg-background-dark rounded-premium overflow-hidden group">
-                <div class="relative aspect-video overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+<!-- number 2 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
                         style='background-image: url("./image/AnondoNogor9.webp");'></div>
-                    <div class="absolute top-4 right-4 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-bold">
-                        শান্ত ভ্রমণ</div>
+
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-black mb-3">সোয়ান বোট রাইডিং</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-6 leading-relaxed">পদ্ম পুকুরের বুক চিরে
-                        রাজহাঁস নৌকায় শান্ত ভ্রমণের এক অপূর্ব সুযোগ।</p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-accent">face</span>
-                            <span class="text-xs font-bold">সকলের জন্য</span>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        সোয়ান বোট রাইডিং</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        পদ্ম পুকুরের বুক চিরে রাজহাঁস নৌকায় শান্ত ভ্রমণের এক অপূর্ব সুযোগ।
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-forest-green dark:text-accent">schedule</span>
-                            <span class="text-xs font-bold">০৯:০০ - সূর্যাস্ত</span>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="ride-card flex flex-col bg-white dark:bg-background-dark rounded-premium overflow-hidden group">
-                <div class="relative aspect-video overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+<!-- number 3 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
                         style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
-                    <div class="absolute top-4 right-4 bg-accent text-primary px-4 py-1 rounded-full text-xs font-bold">
-                        কিডস স্পেশাল</div>
+                  
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-black mb-3">কিডস মিনি ট্রেন</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-6 leading-relaxed">ছোট্ট সোনামণিদের জন্য
-                        ইকো-গার্ডেন জোনের চারপাশে একটি রঙিন ট্রেন সফর।</p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-accent">child_care</span>
-                            <span class="text-xs font-bold">১০ বছরের নিচে</span>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        কিডস মিনি ট্রেন</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        ছোট্ট সোনামণিদের জন্য ইকো-গার্ডেন জোনের চারপাশে একটি রঙিন ট্রেন সফর।
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-forest-green dark:text-accent">schedule</span>
-                            <span class="text-xs font-bold">১০:০০ - ০৭:০০</span>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- number 4 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
+                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
+                  
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- number 5 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
+                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
+                  
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- number 6 -->
+            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
+                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
+            
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা</h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div
-            class="mt-20 p-10 bg-white rounded-[2rem] border-2 border-dashed border-forest-green/20 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="max-w-xl text-center md:text-left">
-                <h4 class="text-3xl font-black text-primary dark:text-white mb-4">গ্রুপ ভিজিট করতে চান?</h4>
-                <p class="text-forest-green/80 dark:text-white/70">আবহাওয়া বা রক্ষণাবেক্ষণের কারণে সময়সূচী পরিবর্তন হতে
-                    পারে। গ্রুপ ডিসকাউন্ট বা বিশেষ ট্যুরের জন্য আমাদের সাথে যোগাযোগ করুন।</p>
-            </div>
-            <div class="flex items-center gap-6 bg-background-light p-6 rounded-2xl">
-                <span class="material-symbols-outlined text-5xl text-primary">support_agent</span>
-                <div>
-                    <p class="text-xs font-bold text-forest-green/60 uppercase tracking-widest">কল করুন </p>
-                    <p class="text-2xl font-black text-primary">+৮৮ ১৮০০-আনন্দ-নগর</p>
-                </div>
-            </div>
-        </div>
+     
     </main>
 
-<div id="main-footer"></div>
+    <div id="main-footer"></div>
 
 </body>
 
