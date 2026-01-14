@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="light" lang="bn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>গ্যালারি | আনন্দনগর হেরিটেজ ও ইকো-পার্ক</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .masonry-grid {
+                column-count: 3;
+                column-gap: 1.5rem;
+            }
+            @media (max-width: 1024px) { .masonry-grid { column-count: 2; } }
+            @media (max-width: 640px) { .masonry-grid { column-count: 1; } }
+            .masonry-item {
+                break-inside: avoid;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+    <script src="./assets/js/global.js"></script>
+</head>
+
+<body class="bg-background-light font-body text-forest-green antialiased">
+
+    <div id="main-header"></div>
+
+    <main>
+        <section class="bg-white border-b border-gray-200">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-20">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="h-[2px] w-10 bg-saffron-yellow"></div>
+                            <span
+                                class="text-saffron-yellow font-bold uppercase tracking-widest text-sm">চিত্রশালা</span>
+                        </div>
+                        <h2
+                            class="text-5xl lg:text-7xl font-oswald font-bold text-forest-green tracking-tighter uppercase leading-none">
+                            আনন্দনগর গ্যালারি
+                        </h2>
+                        <p class="mt-6 text-lg text-forest-green/70 font-medium leading-relaxed">
+                            আমাদের ঐতিহ্যের প্রতিটি কোণ এবং প্রকৃতির স্নিগ্ধতাকে ক্যামেরায় বন্দি করা হয়েছে। আনন্দনগরের
+                            বিশেষ মুহূর্তগুলো একনজরে দেখে নিন।
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <button
+                            class="px-6 py-2 border-2 border-forest-green bg-forest-green text-white font-bold uppercase text-xs tracking-widest transition-all rounded-full">সব
+                            ছবি</button>
+                        <button
+                            class="px-6 py-2 border-2 border-gray-200 text-gray-500 font-bold uppercase text-xs tracking-widest hover:border-forest-green hover:text-forest-green transition-all rounded-full">বাগান</button>
+                        <button
+                            class="px-6 py-2 border-2 border-gray-200 text-gray-500 font-bold uppercase text-xs tracking-widest hover:border-forest-green hover:text-forest-green transition-all rounded-full">রাইডস</button>
+                        <button
+                            class="px-6 py-2 border-2 border-gray-200 text-gray-500 font-bold uppercase text-xs tracking-widest hover:border-forest-green hover:text-forest-green transition-all rounded-full">লেক
+                            ভিউ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16">
+            <div class="masonry-grid">
+
+                <div class="masonry-item group relative overflow-hidden rounded-2xl cursor-pointer shadow-lg">
+                    <img alt="ইকো ট্রেইল" class="w-full h-auto transition-transform duration-700 group-hover:scale-110"
+                        src="./image/AnondoNogor7.webp" />
+                    <div
+                        class="absolute inset-0 bg-forest-green/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white">
+                            <span class="text-[10px] font-bold text-saffron-yellow uppercase tracking-widest">জোন
+                                ০১</span>
+                            <h4 class="font-oswald font-bold text-xl uppercase">ইকো ট্রেইল</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item group relative overflow-hidden rounded-2xl cursor-pointer shadow-lg">
+                    <img alt="শান্ত লেক" class="w-full h-auto transition-transform duration-700 group-hover:scale-110"
+                        src="./image/AnondoNogor9.webp" />
+                    <div
+                        class="absolute inset-0 bg-forest-green/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white">
+                            <span class="text-[10px] font-bold text-saffron-yellow uppercase tracking-widest">জোন
+                                ০৩</span>
+                            <h4 class="font-oswald font-bold text-xl uppercase">শান্ত লেক ভিউ</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="masonry-item bg-forest-green p-10 flex flex-col justify-center items-center text-center gap-6 rounded-2xl min-h-[300px]">
+                    <i class="fa-solid fa-camera-retro text-saffron-yellow text-5xl"></i>
+                    <h4 class="text-white font-oswald text-2xl font-bold uppercase tracking-tight">আপনার মুহূর্তটি ভাগ
+                        করুন</h4>
+                    <p class="text-white/70 text-sm font-medium">আপনার তোলা সেরা ছবিগুলো আমাদের সোশ্যাল মিডিয়ায় ট্যাগ
+                        করুন #AnandanagarHeritage হ্যাশট্যাগ দিয়ে।</p>
+                </div>
+
+                <div class="masonry-item group relative overflow-hidden rounded-2xl cursor-pointer shadow-lg">
+                    <img alt="অ্যাডভেঞ্চার রাইডস"
+                        class="w-full h-auto transition-transform duration-700 group-hover:scale-110"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjr61g-5SWUMiOSC64eygUdeDVw_7nr5lJ2-4M2ofdPxnvmY5rJyObPLwwZvRDmUXyxNggwTH70byuZ_YQuR7QIc92JG9XEZgV0-RmoMxT8JIHIVEhxXsjm33Fn_hkk520kKw2KmwYkfmm7VWkMG5P-BlHOikTdZgm3fDTOxHsWRCsrI95bA5BjPV4jbVsWODoPpxUN4T_GFTQdM-x7IIh05c9bXJp1jrW4sMg7ubno72W-wSVybpW4NWCMnIThcm5vgt1VoYcTbA" />
+                    <div
+                        class="absolute inset-0 bg-forest-green/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white">
+                            <span
+                                class="text-[10px] font-bold text-saffron-yellow uppercase tracking-widest">বিনোদন</span>
+                            <h4 class="font-oswald font-bold text-xl uppercase">অ্যাডভেঞ্চার জোন</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item group relative overflow-hidden rounded-2xl cursor-pointer shadow-lg">
+                    <img alt="পার্ক ল্যান্ডস্কেপ"
+                        class="w-full h-auto transition-transform duration-700 group-hover:scale-110"
+                        src="./image/AnondoNogor14webp.webp" />
+                    <div
+                        class="absolute inset-0 bg-forest-green/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white">
+                            <span
+                                class="text-[10px] font-bold text-saffron-yellow uppercase tracking-widest">ল্যান্ডস্কেপ</span>
+                            <h4 class="font-oswald font-bold text-xl uppercase">মূল ফটক ও চত্বর</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 flex justify-center">
+                <button
+                    class="bg-white text-forest-green border-2 border-forest-green px-12 py-4 font-bold uppercase tracking-widest hover:bg-forest-green hover:text-white transition-all rounded-full flex items-center gap-3">
+                    <i class="fa-solid fa-rotate-right"></i> আরো ছবি লোড করুন
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-forest-green py-20 px-6 lg:px-12 border-t-8 border-saffron-yellow">
+            <div
+                class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+                <div class="flex-1">
+                    <h3
+                        class="text-4xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-tighter leading-none mb-6">
+                        সরাসরি উপভোগ করুন</h3>
+                    <p class="text-white/70 text-lg max-w-xl">ছবিতে দেখা সৌন্দর্য বাস্তবে দেখতে আজই আপনার পরিবার নিয়ে
+                        চলে আসুন আনন্দনগরে।</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="tel:+8801700000000"
+                        class="bg-saffron-yellow text-forest-green px-10 py-4 font-bold uppercase tracking-widest hover:bg-white transition-all rounded-xl">টিকিট
+                        বুকিং</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="main-footer"></div>
+
+</body>
+
+</html>
