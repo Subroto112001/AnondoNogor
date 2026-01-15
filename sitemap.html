@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="light" lang="bn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>সাইটম্যাপ | আনন্দনগর - দ্রুত নেভিগেশন</title>
+    <meta name="title" content="সাইটম্যাপ | আনন্দনগর - দ্রুত নেভিগেশন">
+    <meta name="description"
+        content="আনন্দনগর ওয়েবসাইটের সকল পেজের তালিকা। খুব সহজেই খুঁজে নিন আপনার প্রয়োজনীয় তথ্য, রাইড, গ্যালারি এবং যোগাযোগের ঠিকানা।">
+    <meta name="keywords" content="আনন্দনগর সাইটম্যাপ, ওয়েবসাইট ম্যাপ, আনন্দনগর নেভিগেশন, পেজ তালিকা">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./assets/js/global.js"></script>
+
+    <style>
+        @layer base {
+            body {
+                font-family: 'Noto Serif Bengali', serif;
+                @apply bg-background-light dark:bg-gray-950 text-forest-green dark:text-white leading-relaxed;
+            }
+        }
+
+        .sitemap-card {
+            @apply bg-white dark:bg-gray-900 border border-forest-green/10 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300;
+        }
+
+        .sitemap-link {
+            @apply flex items-center gap-3 text-lg font-medium text-gray-600 dark:text-gray-300 hover:text-primary hover:translate-x-2 transition-all duration-200 py-2;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <header id="main-header"></header>
+
+    <main class="flex-grow max-w-[1280px] mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24 w-full">
+
+        <div class="text-center mb-16">
+            <h1 class="text-4xl lg:text-6xl font-black text-forest-green dark:text-white mb-4">
+                সাইটম্যাপ
+            </h1>
+            <div class="w-20 h-1.5 bg-saffron-yellow mx-auto rounded-full mb-6"></div>
+            <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+                আমাদের ওয়েবসাইটের সকল পেজ এক নজরে। আপনার প্রয়োজনীয় সেকশনে দ্রুত যেতে নিচের লিঙ্কগুলো ব্যবহার করুন।
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <section class="sitemap-card" aria-labelledby="intro-section">
+                <div class="flex items-center gap-3 mb-6 border-b border-gray-100 pb-4">
+                    <i class="fa-solid fa-house text-2xl text-primary"></i>
+                    <h2 id="intro-section" class="text-2xl font-bold text-forest-green">পরিচিতি</h2>
+                </div>
+                <ul class="space-y-1">
+                    <li>
+                        <a href="./index.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            হোম
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            আমাদের সম্পর্কে
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sitemap-card" aria-labelledby="fun-section">
+                <div class="flex items-center gap-3 mb-6 border-b border-gray-100 pb-4">
+                    <i class="fa-solid fa-ticket text-2xl text-primary"></i>
+                    <h2 id="fun-section" class="text-2xl font-bold text-forest-green">বিনোদন ও রাইড</h2>
+                </div>
+                <ul class="space-y-1">
+                    <li>
+                        <a href="./attractions.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            আকর্ষণীয় স্থানসমূহ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./features.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            ফিচার
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./gallery.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            ছবি গ্যালারি
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pricing.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            প্রাইসিং
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sitemap-card" aria-labelledby="help-section">
+                <div class="flex items-center gap-3 mb-6 border-b border-gray-100 pb-4">
+                    <i class="fa-solid fa-circle-info text-2xl text-primary"></i>
+                    <h2 id="help-section" class="text-2xl font-bold text-forest-green">সহায়তা ও তথ্য</h2>
+                </div>
+                <ul class="space-y-1">
+                    <li>
+                        <a href="./contact.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            যোগাযোগ করুন
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./policy.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            নীতিমালা ও শর্তাবলী
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./termsandcondition.html" class="sitemap-link">
+                            <i class="fa-solid fa-angle-right text-saffron-yellow text-sm"></i>
+                            গোপনীয়তা নীতিমালা
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="mt-16 p-8 bg-forest-green rounded-3xl text-center text-white">
+            <h3 class="text-xl font-bold mb-4">যোগাযোগ</h3>
+            <div class="flex justify-center items-center gap-6">
+
+                <a href="tel:+8801234567890"
+                    class="md:text-4xl font-bold text-saffron leading-none hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saffron rounded-md w-fit">
+                    +৮৮০ ১২৩৪ ৫৬৭৮৯০
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="main-footer"></footer>
+</body>
+
+</html>
