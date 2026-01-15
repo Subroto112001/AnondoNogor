@@ -4,7 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>আমাদের ঐতিহ্য | আনন্দনগর হেরিটেজ ও ইকো-পার্ক</title>
+    <meta name="title" content="আমাদের ঐতিহ্য | আনন্দনগর হেরিটেজ ও ইকো-পার্ক">
+    <meta name="description"
+        content="আনন্দনগর হেরিটেজ ও ইকো-পার্কের ইতিহাস ও ঐতিহ্য জানুন। ১৯৮২ সাল থেকে প্রকৃতি সংরক্ষণ ও সুস্থ বিনোদনের এক অনন্য নাম।">
+    <meta name="keywords"
+        content="আনন্দনগর, ইকো পার্ক, হেরিটেজ পার্ক, বাংলাদেশ পর্যটন, নূর মোহাম্মদ নূর, প্রকৃতি ভ্রমণ">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Anandanagar Heritage & Eco-Park">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anandanagar.com/heritage">
+    <meta property="og:title" content="আমাদের ঐতিহ্য | আনন্দনগর হেরিটেজ ও ইকো-পার্ক">
+    <meta property="og:description"
+        content="প্রকৃতি-বান্ধব স্থাপত্য এবং সামাজিক দায়বদ্ধতার এক দীর্ঘ পথচলা। জানুন আনন্দনগরের ইতিহাস।">
+    <meta property="og:image" content="https://www.anandanagar.com/assets/images/heritage-banner.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.anandanagar.com/heritage">
+    <meta property="twitter:title" content="আমাদের ঐতিহ্য | আনন্দনগর হেরিটেজ ও ইকো-পার্ক">
+    <meta property="twitter:description"
+        content="প্রকৃতি-বান্ধব স্থাপত্য এবং সামাজিক দায়বদ্ধতার এক দীর্ঘ পথচলা। জানুন আনন্দনগরের ইতিহাস।">
+    <meta property="twitter:image" content="https://www.anandanagar.com/assets/images/heritage-banner.jpg">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,77 +35,49 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#2D6A4F",
-                        "forest-green": "#1A4332",
-                        "saffron-yellow": "#FFD166",
-                        "deep-jungle": "#112d22",
-                        "background-light": "#f6f7f7",
-                    },
-                    fontFamily: {
-                        // আপনার অনুরোধ অনুযায়ী সব জায়গায় Noto Serif সেট করা হয়েছে
-                        'body': ['Noto Serif Bengali', 'serif'],
-                        'heading': ['Noto Serif Bengali', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer base {
-            /* বর্ডার রেডিয়াস আনন্দনগরের স্ট্যান্ডার্ড অনুযায়ী সেট করা হয়েছে */
-            .rounded-custom { border-radius: 1.5rem; }
-        }
-        .timeline-line {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background-color: #1A4332;
-            opacity: 0.2;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/page/about.css">
     <script src="./assets/js/global.js"></script>
 </head>
 
 <body class="bg-background-light font-body text-deep-jungle antialiased">
 
-    <div id="main-header"></div>
+    <header id="main-header"></header>
 
     <main>
-        <section class="relative bg-forest-green py-24 text-white overflow-hidden">
+        <section class="relative bg-forest-green py-12 sm:py-16 md:py-20 lg:py-24 text-white overflow-hidden"
+            aria-label="Introduction">
             <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')]">
             </div>
-            <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 flex flex-col items-center text-center">
-                <div class="h-1.5 w-20 bg-saffron-yellow mb-6 rounded-full"></div>
-                <h1 class="text-5xl lg:text-7xl font-black mb-6 tracking-tight leading-tight">
-                    আমাদের ঐতিহ্য</h1>
-                <p class="max-w-2xl text-lg font-light leading-relaxed opacity-90">
+
+            <div class="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col items-center text-center">
+                <div class="h-1.5 w-16 sm:w-20 bg-saffron-yellow mb-4 sm:mb-6 rounded-full"></div>
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 tracking-tight leading-tight">
+                    আমাদের ঐতিহ্য
+                </h1>
+                <p class="max-w-2xl text-base sm:text-lg font-light leading-relaxed opacity-90">
                     প্রকৃতি-বান্ধব স্থাপত্য এবং সামাজিক দায়বদ্ধতার এক দীর্ঘ পথচলা। আনন্দনগর কয়েক দশক ধরে টেকসই
-                    বিনোদনের
-                    এক অনন্য আলোকবর্তিকা হিসেবে দাঁড়িয়ে আছে।
+                    বিনোদনের এক অনন্য আলোকবর্তিকা হিসেবে দাঁড়িয়ে আছে।
                 </p>
             </div>
         </section>
 
-        <section class="py-24 max-w-[1280px] mx-auto px-6 lg:px-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section class="py-12 sm:py-16 md:py-20 lg:py-24 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10"
+            aria-label="Founder Information">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center">
+
                 <div class="relative">
                     <div
                         class="aspect-square w-full border-[12px] border-white p-0 bg-white shadow-2xl rounded-3xl overflow-hidden">
-                        <div class="w-full h-full bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-700"
-                            style='background-image: url("./image/founder.webp");'>
-                        </div>
+                        <img src="./image/founder.webp" alt="আনন্দনগর পার্কের প্রতিষ্ঠাতা নূর মোহাম্মদ নূর"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            loading="lazy">
                     </div>
                     <div
-                        class="absolute -bottom-6 -right-6 bg-saffron-yellow p-8 border-4 border-white shadow-lg rounded-2xl hidden md:block">
-                        <p class="font-bold text-2xl leading-none text-forest-green">প্রতিষ্ঠিত<br><span
-                                class="text-4xl">১৯৮২</span></p>
+                        class="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 bg-saffron-yellow p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-white shadow-lg rounded-xl sm:rounded-2xl">
+                        <p class="font-bold text-lg sm:text-xl md:text-2xl leading-none text-forest-green">
+                            প্রতিষ্ঠিত<br><span class="text-2xl sm:text-3xl md:text-4xl">১৯৮২</span>
+                        </p>
                     </div>
                 </div>
 
@@ -103,26 +98,30 @@
                             আধুনিক ইকো-পার্কে পরিণত হয়েছে।
                         </p>
                     </div>
-                    <div class="grid grid-cols-2 gap-6 text-center">
-                        <div class="p-8 bg-white border border-gray-100 shadow-sm rounded-3xl">
-                            <h4 class="font-bold text-5xl text-forest-green mb-2">৪০+</h4>
-                            <p class="text-sm font-bold opacity-70">গৌরবময় বছর</p>
+
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 text-center">
+                        <div
+                            class="p-4 sm:p-6 md:p-8 bg-white border border-gray-100 shadow-sm rounded-2xl sm:rounded-3xl">
+                            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl text-forest-green mb-2">৪০+</h4>
+                            <p class="text-xs sm:text-sm font-bold opacity-70">গৌরবময় বছর</p>
                         </div>
-                        <div class="p-8 bg-white border border-gray-100 shadow-sm rounded-3xl">
-                            <h4 class="font-bold text-5xl text-forest-green mb-2">১২</h4>
-                            <p class="text-sm font-bold opacity-70">জাতীয় পুরস্কার</p>
+                        <div
+                            class="p-4 sm:p-6 md:p-8 bg-white border border-gray-100 shadow-sm rounded-2xl sm:rounded-3xl">
+                            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl text-forest-green mb-2">১২</h4>
+                            <p class="text-xs sm:text-sm font-bold opacity-70">জাতীয় পুরস্কার</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-white">
-            <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <section class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white" aria-label="Core Values and Awards">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-forest-green/10 shadow-2xl">
-                    <div class="bg-background-light p-12 flex flex-col gap-6">
-                        <i class="fa-solid fa-scroll text-5xl text-forest-green"></i>
+                    class="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl sm:rounded-3xl overflow-hidden border border-forest-green/10 shadow-2xl">
+
+                    <div class="bg-background-light p-6 sm:p-8 md:p-12 flex flex-col gap-4 sm:gap-6">
+                        <i class="fa-solid fa-scroll text-5xl text-forest-green" aria-hidden="true"></i>
                         <h3 class="text-3xl font-bold text-forest-green">মূল ঐতিহ্য</h3>
                         <p class="text-deep-jungle/70 leading-relaxed text-lg">
                             আনন্দনগরের মাটি রূপান্তরের গল্প বলে। মূলত একটি অবহেলিত গ্রাম অঞ্চলকে এক দশকের কঠোর পরিশ্রমে
@@ -130,15 +129,18 @@
                         </p>
                         <ul class="space-y-4 mt-4">
                             <li class="flex items-center gap-3 font-bold text-forest-green">
-                                <i class="fa-solid fa-leaf text-saffron-yellow"></i> ১০০% দেশীয় উদ্ভিদ নীতি
+                                <i class="fa-solid fa-leaf text-saffron-yellow" aria-hidden="true"></i> ১০০% দেশীয়
+                                উদ্ভিদ নীতি
                             </li>
                             <li class="flex items-center gap-3 font-bold text-forest-green">
-                                <i class="fa-solid fa-leaf text-saffron-yellow"></i> ঐতিহ্যবাহী কারুশিল্প গ্রাম
+                                <i class="fa-solid fa-leaf text-saffron-yellow" aria-hidden="true"></i> ঐতিহ্যবাহী
+                                কারুশিল্প গ্রাম
                             </li>
                         </ul>
                     </div>
+
                     <div class="bg-forest-green text-white p-12 flex flex-col gap-6">
-                        <i class="fa-solid fa-trophy text-5xl text-saffron-yellow"></i>
+                        <i class="fa-solid fa-trophy text-5xl text-saffron-yellow" aria-hidden="true"></i>
                         <h3 class="text-3xl font-bold">বিশেষ অর্জন</h3>
                         <p class="text-white/80 leading-relaxed text-lg">
                             আমরা দেশের প্রথম 'জিরো-ওয়েস্ট' অ্যামিউজমেন্ট পার্ক হিসেবে গর্বিত, যা টেকসই পরিবেশ রক্ষায়
@@ -146,10 +148,10 @@
                         </p>
                         <ul class="space-y-4 mt-4">
                             <li class="flex items-center gap-3 font-bold text-saffron-yellow">
-                                <i class="fa-solid fa-award"></i> গ্লোবাল গ্রিন অ্যাওয়ার্ড ২০১৮
+                                <i class="fa-solid fa-award" aria-hidden="true"></i> গ্লোবাল গ্রিন অ্যাওয়ার্ড ২০১৮
                             </li>
                             <li class="flex items-center gap-3 font-bold text-saffron-yellow">
-                                <i class="fa-solid fa-award"></i> ইউনেস্কো হেরিটেজ পার্টনার
+                                <i class="fa-solid fa-award" aria-hidden="true"></i> ইউনেস্কো হেরিটেজ পার্টনার
                             </li>
                         </ul>
                     </div>
@@ -157,7 +159,7 @@
             </div>
         </section>
 
-        <section class="py-24 bg-white overflow-hidden">
+        <section class="py-24 bg-white overflow-hidden" aria-label="History Timeline">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
                 <div class="text-center mb-20">
                     <h2 class="text-5xl font-black text-forest-green">ইতিহাসের পাতায় আনন্দনগর</h2>
@@ -165,27 +167,29 @@
                 </div>
 
                 <div class="relative">
-                    <div class="timeline-line hidden md:block"></div>
-                    <div class="space-y-24">
-                        <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
+                    <div class="timeline-line hidden md:block" aria-hidden="true"></div>
+                    <div class="space-y-12 sm:space-y-16 md:space-y-24">
+
+                        <div class="relative flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-0">
                             <div class="md:w-1/2 md:pr-16 text-right hidden md:block">
                                 <h3 class="text-5xl font-black text-forest-green">১৯৮২</h3>
                                 <p class="font-bold text-saffron-yellow uppercase tracking-widest mt-2">ভিত্তিপ্রস্তর
                                 </p>
                             </div>
-                            <div
-                                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block">
-                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block"
+                                aria-hidden="true"></div>
                             <div class="md:w-1/2 md:pl-16">
                                 <div class="md:hidden mb-4">
                                     <h3 class="text-4xl font-bold text-forest-green">১৯৮২</h3>
                                 </div>
-                                <div
-                                    class="bg-background-light p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
-                                    <h4 class="text-2xl font-bold mb-4 text-forest-green">প্রথম বীজ বপন</h4>
-                                    <p class="text-deep-jungle/70 text-lg">জনাব নূর মোহাম্মদ নূর প্রাথমিকভাবে ২০ একর জমি
-                                        অধিগ্রহণ করেন এবং স্বল্প পরিসরে আনন্দ নগর কার্যক্রম শুরু করেন।</p>
-                                </div>
+                                <article
+                                    class="bg-background-light p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
+                                    <h4 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-forest-green">প্রথম বীজ
+                                        বপন</h4>
+                                    <p class="text-deep-jungle/70 text-base sm:text-lg">জনাব নূর মোহাম্মদ নূর
+                                        প্রাথমিকভাবে ২০ একর জমি অধিগ্রহণ করেন এবং স্বল্প পরিসরে আনন্দ নগর কার্যক্রম শুরু
+                                        করেন।</p>
+                                </article>
                             </div>
                         </div>
 
@@ -194,16 +198,15 @@
                                 <div class="md:hidden mb-4 text-right">
                                     <h3 class="text-4xl font-bold text-forest-green">১৯৯৫</h3>
                                 </div>
-                                <div
+                                <article
                                     class="bg-forest-green text-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all">
                                     <h4 class="text-2xl font-bold mb-4 text-saffron-yellow">দ্বার উন্মোচন</h4>
                                     <p class="text-white/80 text-lg">আনন্দনগর একটি পিকনিক পার্ক হিসেবে যাত্রা শুরু করে,
                                         যা প্রকৃতি প্রেমীদের জন্য এক নতুন ঠিকানা হয়ে ওঠে।</p>
-                                </div>
+                                </article>
                             </div>
-                            <div
-                                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block">
-                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block"
+                                aria-hidden="true"></div>
                             <div class="md:w-1/2 md:pl-16 text-left hidden md:block order-1 md:order-2">
                                 <h3 class="text-5xl font-black text-forest-green">১৯৯৫</h3>
                                 <p class="font-bold text-saffron-yellow uppercase tracking-widest mt-2">যাত্রা শুরু</p>
@@ -213,30 +216,30 @@
                         <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
                             <div class="md:w-1/2 md:pr-16 text-right hidden md:block">
                                 <h3 class="text-5xl font-black text-forest-green">২০১২</h3>
-                                <p class="font-bold text-saffron-yellow uppercase tracking-widest mt-2">আধুনিকায়ন</p>
+                                <p class="font-bold text-saffron-yellow uppercase tracking-widest mt-2">আধুনিকায়ন</p>
                             </div>
-                            <div
-                                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block">
-                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-saffron-yellow border-4 border-white shadow-md rounded-full z-10 hidden md:block"
+                                aria-hidden="true"></div>
                             <div class="md:w-1/2 md:pl-16">
                                 <div class="md:hidden mb-4">
                                     <h3 class="text-4xl font-bold text-forest-green">২০১২</h3>
                                 </div>
-                                <div
+                                <article
                                     class="bg-background-light p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
                                     <h4 class="text-2xl font-bold mb-4 text-forest-green">রোমাঞ্চের মেলবন্ধন</h4>
                                     <p class="text-deep-jungle/70 text-lg">প্রথমবারের মতো টেকসই ইকো-রাইড এবং ওয়াটার
                                         ওয়ার্ল্ড জোন চালু করা হয়, যা গ্রামীণ পরিবেশে আধুনিক বিনোদনের সূচনা করে।</p>
-                                </div>
+                                </article>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="main-footer"></div>
+    <footer id="main-footer"></footer>
 
 </body>
 

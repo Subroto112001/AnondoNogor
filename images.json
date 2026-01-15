@@ -1,0 +1,133 @@
+[
+  {
+    "src": "./image/AnondoNogor7.webp",
+    "alt": "ভুতের বাড়ি",
+    "zone": "জোন ০১",
+    "title": "ভুতের বাড়ি"
+  },
+  {
+    "src": "./image/AnondoNogor9.webp",
+    "alt": "লেক ভিউ",
+    "zone": "লেক",
+    "title": "লেক ভিউ"
+  },
+  {
+    "src": "./image/AnondoNogor3.webp",
+    "alt": "ফটক",
+    "zone": "ল্যান্ডস্কেপ",
+    "title": "মূল ফটক"
+  },
+  {
+    "src": "./image/Anondo4.webp",
+    "alt": "মুক্তিযুদ্ধ প্রাঙ্গন",
+    "zone": "ইতিহাস",
+    "title": "মুক্তিযুদ্ধ প্রাঙ্গন"
+  },
+  {
+    "src": "./image/Anondo5.webp",
+    "alt": "জিরাফের স্ট্যাচু",
+    "zone": "বিনোদন",
+    "title": "জিরাফের স্ট্যাচু"
+  },
+  {
+    "src": "./image/Anondo6.webp",
+    "alt": "বকের স্ট্যাচু",
+    "zone": "বিনোদন",
+    "title": "বকের স্ট্যাচু"
+  },
+  {
+    "src": "./image/AnondoNogor1.webp",
+    "alt": "পুকুর পাড়",
+    "zone": "বিনোদন",
+    "title": "পুকুর পাড়"
+  },
+  {
+    "src": "./image/AnondoNogor2.webp",
+    "alt": "লেক পাড়",
+    "zone": "বিনোদন",
+    "title": "লেক পাড়"
+  },{
+    "src": "./image/AnondoNogor3.webp",
+    "alt": "ফটক",
+    "zone": "বিনোদন",
+    "title": "ফটক"
+  }
+  ,{
+    "src": "./image/AnondoNogor4.webp",
+    "alt": "ময়ূর",
+    "zone": "বিনোদন",
+    "title": "ময়ূর"
+  }
+  ,{
+    "src": "./image/AnondoNogor6.webp",
+    "alt": "হনুমান স্ট্যাচু",
+    "zone": "বিনোদন",
+    "title": "হনুমান স্ট্যাচু"
+  }
+  ,{
+    "src": "./image/AnondoNogor10.webp",
+    "alt": "ফটক",
+    "zone": "বিনোদন",
+    "title": "ফটক"
+  }
+  ,{
+    "src": "./image/AnondoNogor11.webp",
+    "alt": "ঘোড়ার স্ট্যাচু",
+    "zone": "বিনোদন",
+    "title": "ঘোড়ার স্ট্যাচু"
+  }
+  ,{
+    "src": "./image/AnondoNogor12.webp",
+    "alt": "লেক পাড়",
+    "zone": "বিনোদন",
+    "title": "লেক পাড়"
+  }
+  ,{
+    "src": "./image/AnondoNogor13.webp",
+    "alt": "দোয়েল পাখি",
+    "zone": "বিনোদন",
+    "title": "দোয়েল পাখি"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+  ,{
+    "src": "./image/AnondoNogor13.webp",
+    "alt": "দোয়েল পাখি",
+    "zone": "বিনোদন",
+    "title": "দোয়েল পাখি"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+  ,{
+    "src": "./image/AnondoNogor8.webp",
+    "alt": "রাইড",
+    "zone": "বিনোদন",
+    "title": "অ্যাডভেঞ্চার রাইড"
+  }
+]

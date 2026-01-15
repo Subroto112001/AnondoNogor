@@ -4,14 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>আকর্ষণীয় স্থানসমূহ | আনন্দনগর ইকো-পার্ক</title>
+    <meta name="title" content="আকর্ষণীয় স্থানসমূহ | আনন্দনগর ইকো-পার্ক">
+    <meta name="description"
+        content="আনন্দনগর ইকো-পার্কের দর্শনীয় স্থানসমূহ: হেরিটেজ মিনি চিড়িয়াখানা, প্রিমিয়াম পিকনিক জোন এবং লেকে নৌকা ভ্রমণ। পরিবারের সাথে সময় কাটানোর সেরা স্থান।">
+    <meta name="keywords" content="আনন্দনগর চিড়িয়াখানা, পিকনিক স্পট, নৌকা ভ্রমণ, ইকো পার্ক রাইড, ছুটির দিনের বিনোদন">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anandanagar.com/attractions">
+    <meta property="og:title" content="আকর্ষণীয় স্থানসমূহ | আনন্দনগর ইকো-পার্ক">
+    <meta property="og:description"
+        content="বন্যপ্রাণী দর্শন থেকে শুরু করে লেকের শান্ত জলে নৌকা ভ্রমণ—সবই পাবেন আনন্দনগরে।">
+    <meta property="og:image" content="https://www.anandanagar.com/assets/images/attractions-banner.jpg">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
 
     <style type="text/tailwindcss">
         @layer base {
@@ -23,10 +36,12 @@
 
 <body class="bg-background-light font-body text-deep-jungle antialiased">
 
-    <div id="main-header"></div>
+    <header id="main-header"></header>
 
     <main>
-        <section class="bg-forest-green text-white py-24 px-6 relative overflow-hidden">
+        <section
+            class="bg-forest-green text-white py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 relative overflow-hidden"
+            aria-label="Page Introduction">
             <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')]">
             </div>
             <div class="relative max-w-[1280px] mx-auto text-center">
@@ -40,26 +55,29 @@
         </section>
 
         <div class="flex flex-col gap-12 py-12">
-            <section class="max-w-[1440px] mx-auto px-6 w-full">
+
+            <section class="max-w-[1440px] mx-auto px-6 w-full" aria-labelledby="zoo-heading">
                 <div
                     class="flex flex-col md:flex-row bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100">
-                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto bg-center bg-cover"
-                        style='background-image: url("./image/AnondoNogor7.webp");'></div>
+                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto relative">
+                        <img src="./image/AnondoNogor7.webp" alt="আনন্দনগর মিনি চিড়িয়াখানা এবং হরিণ"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            loading="lazy">
+                    </div>
                     <div class="w-full md:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
                         <span
                             class="text-forest-green font-bold uppercase tracking-widest text-sm mb-4 border-b-2 border-saffron-yellow w-fit">প্রকৃতি
                             ও বন্যপ্রাণী</span>
-                        <h2 class="text-4xl font-black mb-6">হেরিটেজ মিনি চিড়িয়াখানা</h2>
+                        <h2 id="zoo-heading" class="text-4xl font-black mb-6">হেরিটেজ মিনি চিড়িয়াখানা</h2>
                         <p class="text-lg text-deep-jungle/70 mb-8 leading-relaxed">
                             দেশীয় এবং বিদেশি বিভিন্ন প্রজাতির পশুপাখির এক নিরাপদ আশ্রয়স্থল। নিরাপদ পরিবেশে
-                            বন্যপ্রাণীদের
-                            খুব কাছ থেকে দেখার এবং জানার এক অনন্য সুযোগ।
+                            বন্যপ্রাণীদের খুব কাছ থেকে দেখার এবং জানার এক অনন্য সুযোগ।
                         </p>
                         <div class="grid grid-cols-2 gap-8 border-t border-gray-100 pt-8">
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">প্রধান
                                     আকর্ষণ</h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• চিত্রা হরিণ</li>
                                     <li>• বিদেশি পক্ষিশালা</li>
                                     <li>• সরীসৃপ ঘর</li>
@@ -68,7 +86,7 @@
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">অভিজ্ঞতা
                                 </h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• তথ্যমূলক ভ্রমণ</li>
                                     <li>• ফটো পয়েন্ট</li>
                                     <li>• পশুপাখি পর্যবেক্ষণ</li>
@@ -79,26 +97,28 @@
                 </div>
             </section>
 
-            <section class="max-w-[1440px] mx-auto px-6 w-full">
+            <section class="max-w-[1440px] mx-auto px-6 w-full" aria-labelledby="picnic-heading">
                 <div
                     class="flex flex-col md:flex-row-reverse bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100">
-                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto bg-center bg-cover"
-                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
+                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto relative">
+                        <img src="./image/AnondoNogor14webp.webp" alt="আনন্দনগর প্রিমিয়াম পিকনিক স্পট ও গ্রিন লন"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            loading="lazy">
+                    </div>
                     <div class="w-full md:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
                         <span
                             class="text-forest-green font-bold uppercase tracking-widest text-sm mb-4 border-b-2 border-saffron-yellow w-fit">অবসর
                             ও প্রশান্তি</span>
-                        <h2 class="text-4xl font-black mb-6">প্রিমিয়াম পিকনিক জোন</h2>
+                        <h2 id="picnic-heading" class="text-4xl font-black mb-6">প্রিমিয়াম পিকনিক জোন</h2>
                         <p class="text-lg text-deep-jungle/70 mb-8 leading-relaxed">
                             পরিবার বা বন্ধুদের নিয়ে আনন্দঘন সময় কাটানোর জন্য আমাদের রয়েছে বিশাল সবুজ চত্বর। সুসজ্জিত
-                            লন
-                            এবং সব ধরণের আধুনিক সুবিধা সংবলিত নিরিবিলি পরিবেশ।
+                            লন এবং সব ধরণের আধুনিক সুবিধা সংবলিত নিরিবিলি পরিবেশ।
                         </p>
                         <div class="grid grid-cols-2 gap-8 border-t border-gray-100 pt-8">
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">সুবিধাসমূহ
                                 </h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• নিরাপদ শেড</li>
                                     <li>• রান্নার ব্যবস্থা</li>
                                     <li>• সুপেয় পানির ব্যবস্থা</li>
@@ -107,7 +127,7 @@
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">ধারণক্ষমতা
                                 </h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• ফ্যামিলি জোন (১০ জন)</li>
                                     <li>• বড় গ্রুপ জোন</li>
                                     <li>• কর্পোরেট ইভেন্ট লন</li>
@@ -118,16 +138,19 @@
                 </div>
             </section>
 
-            <section class="max-w-[1440px] mx-auto px-6 w-full">
+            <section class="max-w-[1440px] mx-auto px-6 w-full" aria-labelledby="boating-heading">
                 <div
                     class="flex flex-col md:flex-row bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100">
-                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto bg-center bg-cover"
-                        style='background-image: url("./image/AnondoNogor9.webp");'></div>
+                    <div class="w-full md:w-1/2 aspect-square md:aspect-auto relative">
+                        <img src="./image/AnondoNogor9.webp" alt="আনন্দনগর লেকে নৌকা ভ্রমণ ও প্যাডেল বোট"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            loading="lazy">
+                    </div>
                     <div class="w-full md:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
                         <span
                             class="text-forest-green font-bold uppercase tracking-widest text-sm mb-4 border-b-2 border-saffron-yellow w-fit">অ্যাডভেঞ্চার
                             ও জলপথ</span>
-                        <h2 class="text-4xl font-black mb-6">শান্ত লেক ও নৌকা ভ্রমণ</h2>
+                        <h2 id="boating-heading" class="text-4xl font-black mb-6">শান্ত লেক ও নৌকা ভ্রমণ</h2>
                         <p class="text-lg text-deep-jungle/70 mb-8 leading-relaxed">
                             পার্কের বিশাল লেকের স্বচ্ছ জলে নৌকা ভ্রমণের আনন্দই আলাদা। প্যাডেল বোট থেকে শুরু করে
                             ঐতিহ্যবাহী নৌকায় ঘুরে দেখার চমৎকার এক মাধ্যম।
@@ -136,7 +159,7 @@
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">বোট
                                     কালেকশন</h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• সোয়ান প্যাডেল বোট</li>
                                     <li>• ফ্যামিলি বোট</li>
                                     <li>• ইঞ্জিন চালিত বোট</li>
@@ -145,7 +168,7 @@
                             <div>
                                 <h4 class="font-bold text-sm uppercase tracking-wider mb-3 text-forest-green">নিরাপত্তা
                                 </h4>
-                                <ul class="text-md space-y-1 text-deep-jungle/60 ">
+                                <ul class="text-md space-y-1 text-deep-jungle/60">
                                     <li>• লাইফ জ্যাকেট সুবিধা</li>
                                     <li>• দক্ষ লাইফগার্ড</li>
                                     <li>• সার্বক্ষণিক পর্যবেক্ষণ</li>
@@ -157,20 +180,19 @@
             </section>
         </div>
 
-        <section class="max-w-[1280px] mx-auto px-6 py-24">
+        <section class="max-w-[1280px] mx-auto px-6 py-24" aria-label="Activity Schedule">
             <div class="bg-white p-8 lg:p-16 rounded-[3rem] shadow-2xl border border-gray-100">
                 <div class="flex flex-col lg:flex-row gap-16">
                     <div class="lg:w-1/3">
                         <h3 class="text-4xl font-black mb-6 text-forest-green">অ্যাক্টিভিটি গাইড</h3>
                         <p class="text-deep-jungle/70 mb-8 text-lg">আপনার ভ্রমণের দিনটি সুন্দরভাবে পরিকল্পনা করতে আমাদের
-                            সময়সূচী
-                            দেখে নিন। সকল কার্যক্রম সময়মতো পরিচালিত হয়।</p>
-
+                            সময়সূচী দেখে নিন। সকল কার্যক্রম সময়মতো পরিচালিত হয়।</p>
                     </div>
                     <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
                         <div class="bg-background-light p-6 rounded-3xl border border-gray-100">
                             <h4 class="font-bold text-lg mb-4 flex items-center gap-2 text-forest-green">
-                                <i class="fa-solid fa-clock text-saffron-yellow"></i> সকালের সেশন
+                                <i class="fa-solid fa-clock text-saffron-yellow" aria-hidden="true"></i> সকালের সেশন
                             </h4>
                             <ul class="space-y-4">
                                 <li class="flex justify-between border-b border-gray-200 pb-2">
@@ -183,9 +205,10 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="bg-background-light p-6 rounded-3xl border border-gray-100">
                             <h4 class="font-bold text-lg mb-4 flex items-center gap-2 text-forest-green">
-                                <i class="fa-solid fa-sun text-saffron-yellow"></i> দুপুরের সেশন
+                                <i class="fa-solid fa-sun text-saffron-yellow" aria-hidden="true"></i> দুপুরের সেশন
                             </h4>
                             <ul>
                                 <li class="flex justify-between border-b border-gray-200 pb-2">
@@ -194,9 +217,10 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="bg-background-light p-6 rounded-3xl border border-gray-100">
                             <h4 class="font-bold text-lg mb-4 flex items-center gap-2 text-red-800">
-                                <i class="fa-solid fa-moon"></i> সমাপনী সময়
+                                <i class="fa-solid fa-moon" aria-hidden="true"></i> সমাপনী সময়
                             </h4>
                             <ul class="space-y-4">
                                 <li class="flex justify-between border-b border-gray-200 pb-2">
@@ -209,10 +233,11 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="bg-forest-green p-6 rounded-3xl text-white">
                             <h4 class="font-bold text-sm uppercase mb-3 text-saffron-yellow">জরুরি নোট</h4>
-                            <p class="text-sm leading-relaxed opacity-80">আবহাওয়া বা বিশেষ কারণে
-                                সময়সূচী পরিবর্তন হতে পারে। বিস্তারিত তথ্যের জন্য তথ্যকেন্দ্রে যোগাযোগ করুন।</p>
+                            <p class="text-sm leading-relaxed opacity-80">আবহাওয়া বা বিশেষ কারণে সময়সূচী পরিবর্তন হতে
+                                পারে। বিস্তারিত তথ্যের জন্য তথ্যকেন্দ্রে যোগাযোগ করুন।</p>
                         </div>
                     </div>
                 </div>
@@ -220,7 +245,7 @@
         </section>
     </main>
 
-    <div id="main-footer"></div>
+    <footer id="main-footer"></footer>
 
 </body>
 

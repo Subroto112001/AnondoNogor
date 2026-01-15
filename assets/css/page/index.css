@@ -1,0 +1,11 @@
+ .modal-active {
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        .modal-inactive {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }

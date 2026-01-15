@@ -12,83 +12,117 @@ tailwind.config = {
       fontFamily: {
         serif: ['"Noto Serif Bengali"', "serif"],
         body: ['"Noto Serif Bengali"', "serif"],
+        oswald: ['"Noto Serif Bengali"', "serif"],
       },
     },
   },
 };
+/**
+ * আনন্দনগর - Universal Global JS
+ * Noto Serif Bengali Font Applied via Configuration
+ */
 
-// Function to load HTML components
+// ১. কম্পোনেন্ট লোড করার মূল ফাংশন
 async function loadComponent(elementId, filePath) {
-    const element = document.getElementById(elementId);
-    if (!element) return;
+  const element = document.getElementById(elementId);
+  if (!element) return false;
 
-    try {
-        const response = await fetch(filePath);
-        if (response.ok) {
-            const content = await response.text();
-            element.innerHTML = content;
-        } else {
-            console.error(`Error loading ${filePath}: ${response.statusText}`);
-        }
-    } catch (error) {
-        console.error(`Fetch error: ${error}`);
+  try {
+    const response = await fetch(filePath);
+    if (response.ok) {
+      const content = await response.text();
+      element.innerHTML = content;
+      return true;
+    } else {
+      console.error(`Error loading ${filePath}: ${response.statusText}`);
+      return false;
     }
+  } catch (error) {
+    console.error(`Fetch error: ${error}`);
+    return false;
+  }
 }
 
-// মোবাইল মেনু টগল ফাংশন
+// ২. কল বাটনের স্মার্ট লজিক (Mobile vs Desktop)
+function setupCallButton() {
+  // হেডার এবং পেজ কন্টেন্টের সব কল বাটনকে সিলেক্ট করা
+  const callButtons = document.querySelectorAll('[ id="call-button"]');
+  const phoneNumber = "+8801700000000"; // আপনার নম্বরটি এখানে দিন
+
+  const isMobile = () =>
+    /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+  callButtons.forEach((btn) => {
+    btn.onclick = (e) => {
+      if (isMobile()) {
+        e.preventDefault();
+        window.location.href = `tel:${phoneNumber}`;
+      } else {
+        // ডেস্কটপে ডিফল্ট href অনুযায়ী contact.html#phone-section এ চলে যাবে
+        console.log("Desktop view: Routing to contact page section.");
+      }
+    };
+  });
+}
+
+// ৩. মোবাইল মেনু টগল লজিক
 function setupMobileMenu() {
-    const toggleBtn = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const toggleIcon = document.getElementById('toggle-icon');
+  const toggleBtn = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const toggleIcon = document.getElementById("toggle-icon");
 
-    // ইভেন্ট লিসেনার যোগ করার আগে চেক করে নেওয়া
-    if (toggleBtn && mobileMenu && toggleIcon) {
-        toggleBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            
-            // আইকন পরিবর্তন logic
-            if (isHidden) {
-                toggleIcon.classList.remove('fa-xmark');
-                toggleIcon.classList.add('fa-bars-staggered');
-            } else {
-                toggleIcon.classList.remove('fa-bars-staggered');
-                toggleIcon.classList.add('fa-xmark');
-            }
-        });
-    }
+  if (toggleBtn && mobileMenu && toggleIcon) {
+    toggleBtn.onclick = () => {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      if (isHidden) {
+        toggleIcon.classList.replace("fa-xmark", "fa-bars-staggered");
+      } else {
+        toggleIcon.classList.replace("fa-bars-staggered", "fa-xmark");
+      }
+    };
+  }
 }
 
-// একটিভ লিঙ্ক সেট করার ফাংশন
+// ৪. মেনু আইটেম হাইলাইট (Active Link)
 function setActiveNavLink() {
-    // বর্তমান পাথ ক্লিন করা (যেমন: /features.html থেকে features.html)
-    let currentPath = window.location.pathname.split("/").pop();
-    if (currentPath === "" || currentPath === "/") currentPath = "index.html";
+  let currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "" || currentPath === "/") currentPath = "index.html";
 
-    const navLinks = document.querySelectorAll(".nav-link");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-    navLinks.forEach((link) => {
-        const href = link.getAttribute("href");
-        if (!href) return;
-        
-        const linkPath = href.split("/").pop();
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) return;
 
-        if (linkPath === currentPath) {
-            link.classList.add("text-primary", "border-primary");
-            link.classList.remove("text-forest-green", "border-transparent");
-        } else {
-            link.classList.remove("text-primary", "border-primary");
-            link.classList.add("text-forest-green", "border-transparent");
-        }
-    });
+    const linkPath = href.split("/").pop();
+
+    if (linkPath === currentPath) {
+      link.classList.add("text-primary", "border-primary");
+      link.classList.remove("text-forest-green", "border-transparent");
+    }
+  });
 }
 
-// DOMContentLoaded ইভেন্ট
+// ৫. মাস্টার ইনিশিয়ালাইজার (সব একসাথে রান হবে)
 document.addEventListener("DOMContentLoaded", async () => {
-    // পাথ অনুযায়ী কম্পোনেন্ট লোড করা
-    await loadComponent("main-header", "components/header.html");
-    await loadComponent("main-footer", "components/footer.html");
+  // কম্পোনেন্টগুলো লোড হওয়ার জন্য অপেক্ষা করবে
+  const headerStatus = await loadComponent(
+    "main-header",
+    "components/header.html"
+  );
+  const footerStatus = await loadComponent(
+    "main-footer",
+    "components/footer.html"
+  );
 
-    // কম্পোনেন্ট লোড হওয়ার পর ফাংশন কল করা
+  // হেডার লোড হওয়ার পর তার ভেতরের ফাংশনগুলো রান করবে
+  if (headerStatus) {
     setupMobileMenu();
     setActiveNavLink();
+  }
+
+  // পেজে আগে থেকে থাকা বা নতুন আসা সব কল বাটন সেটআপ করবে
+  setupCallButton();
 });

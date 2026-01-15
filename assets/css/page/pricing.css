@@ -1,0 +1,23 @@
+  @layer base {
+            body {
+                font-family: 'Noto Serif Bengali', serif;
+                @apply bg-background-light dark:bg-gray-950 text-forest-green dark:text-white;
+            }
+        }
+
+        .sharp-card {
+            @apply border border-forest-green/10 bg-white dark:bg-gray-900 transition-all duration-300;
+            border-radius: 1.5rem;
+        }
+
+        .sharp-card:hover {
+            @apply shadow-xl border-primary/20;
+        }
+
+        .premium-table th {
+            @apply bg-forest-green text-white py-4 px-6 text-sm font-bold uppercase tracking-widest text-left;
+        }
+
+        .premium-table td {
+            @apply py-5 px-6 border-b border-gray-100 dark:border-gray-800 text-sm font-medium;
+        }

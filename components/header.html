@@ -1,14 +1,15 @@
-<header class="sticky top-0 z-50 w-full bg-white border-b border-border-green">
-    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-4 lg:py-5 flex items-center justify-between">
+<header class="sticky top-0 z-50 w-full bg-white border-b border-border-green" role="banner">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 lg:py-5 flex items-center justify-between">
 
-        <a href="index.html" class="flex items-center gap-4">
+        <a href="index.html" class="flex items-center gap-4" aria-label="আনন্দনগর হোমপেজে যান">
             <div class="text-forest-green">
-                <i class="fa-solid fa-tree-city text-2xl lg:text-3xl"></i>
+                <i class="fa-solid fa-tree-city text-2xl lg:text-3xl" aria-hidden="true"></i>
             </div>
             <h2 class="text-forest-green text-xl lg:text-2xl font-black tracking-tight">আনন্দনগর</h2>
         </a>
 
-        <nav class="hidden md:flex flex-1 justify-center items-center gap-8 lg:gap-12">
+        <nav class="hidden md:flex flex-1 justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12"
+            aria-label="প্রধান নেভিগেশন">
             <a class="nav-link text-forest-green text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-1"
                 href="index.html">হোম</a>
             <a class="nav-link text-forest-green text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-1"
@@ -24,21 +25,25 @@
         </nav>
 
         <div class="flex items-center gap-4">
-            <button
-                class="bg-saffron-yellow text-forest-green px-4 lg:px-8 py-2.5 lg:py-3 text-xs lg:text-sm font-bold uppercase tracking-widest border border-forest-green hover:bg-forest-green hover:text-white transition-all rounded-md flex items-center gap-2">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span class="hidden sm:inline">তথ্য জানতে কল করুন</span>
-            </button>
+            <a href="./contact.html#phone-section" id="call-button"
+                class="bg-saffron-yellow text-forest-green px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 text-xs sm:text-sm font-bold uppercase tracking-wider sm:tracking-widest border border-forest-green hover:bg-forest-green hover:text-white transition-all rounded-md flex items-center gap-2"
+                aria-label="আমাদের সাথে যোগাযোগ করতে কল করুন">
+                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                <span class="hidden xs:inline sm:inline">কল করুন</span>
+            </a>
 
-            <button id="mobile-menu-toggle" class="md:hidden text-forest-green text-2xl p-1 focus:outline-none">
-                <i class="fa-solid fa-bars-staggered" id="toggle-icon"></i>
+            <button id="mobile-menu-toggle"
+                class="md:hidden text-forest-green text-2xl p-1 focus:outline-none focus:ring-2 focus:ring-saffron-yellow rounded"
+                aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars-staggered" id="toggle-icon" aria-hidden="true"></i>
             </button>
         </div>
     </div>
 
     <div id="mobile-menu"
-        class="hidden md:hidden bg-white border-t border-border-green shadow-xl absolute w-full left-0 z-40 overflow-hidden transition-all duration-300">
-        <nav class="flex flex-col p-6 gap-4">
+        class="hidden md:hidden bg-white border-t border-border-green shadow-xl absolute w-full left-0 z-40 overflow-hidden transition-all duration-300 ease-in-out"
+        aria-label="মোবাইল নেভিগেশন">
+        <nav class="flex flex-col p-6 gap-4" role="navigation">
             <a class="nav-link text-forest-green text-base font-bold uppercase tracking-widest py-3 border-b border-gray-50"
                 href="index.html">হোম</a>
             <a class="nav-link text-forest-green text-base font-bold uppercase tracking-widest py-3 border-b border-gray-50"

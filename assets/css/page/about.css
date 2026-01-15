@@ -1,0 +1,12 @@
+ @layer base {
+            .rounded-custom { border-radius: 1.5rem; }
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #1A4332;
+            opacity: 0.2;
+        }

@@ -4,13 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>আনন্দনগর | সকল ফিচার ও রাইড</title>
+
+    <title>সকল ফিচার ও রাইড | আনন্দনগর - টিকেটের মূল্য ও সময়সূচী</title>
+    <meta name="title" content="সকল ফিচার ও রাইড | আনন্দনগর - টিকেটের মূল্য ও সময়সূচী">
+    <meta name="description"
+        content="আনন্দনগর পার্কের রোমাঞ্চকর রাইড এবং ফিচারসমূহ। রোলার কোস্টার, সোয়ান বোট, নাগর দোলা এবং কিডস জোনের টিকেটের মূল্য ও বিস্তারিত জানুন।">
+    <meta name="keywords"
+        content="আনন্দনগর রাইড, রোলার কোস্টার, সোয়ান বোট, পার্ক টিকেট প্রাইস, নাগর দোলা, বিনোদন কেন্দ্র">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anandanagar.com/rides">
+    <meta property="og:title" content="সকল ফিচার ও রাইড | আনন্দনগর">
+    <meta property="og:description" content="হাই-থ্রিল রাইড থেকে শুরু করে শান্ত প্রকৃতির সান্নিধ্য—সবই আছে আনন্দনগরে।">
+    <meta property="og:image" content="https://www.anandanagar.com/assets/images/rides-banner.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap"
         rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -21,7 +33,6 @@
     <style>
         @layer base {
             body {
-                /* আপনার পছন্দমতো Noto Serif Bengali সেট করা হয়েছে */
                 font-family: 'Noto Serif Bengali', serif;
             }
 
@@ -37,219 +48,223 @@
         .ride-card:hover {
             @apply shadow-[0_20px_50px_rgba(26, 67, 50, 0.15)] -translate-y-2 border-primary/30;
         }
-
-        /* মসৃণ অ্যানিমেশনের জন্য */
-        .filter-btn-active {
-            @apply bg-primary text-white border-primary shadow-lg;
-        }
     </style>
 </head>
 
 <body class="bg-background-light dark:bg-gray-950 text-forest-green dark:text-white min-h-screen">
 
-    <div id="main-header"></div>
+    <header id="main-header"></header>
 
-    <main class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16">
+    <main class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 md:py-20">
 
-        <div class="mb-16 border-l-[10px] border-saffron-yellow pl-8 py-3">
-            <h2 class="text-4xl lg:text-6xl font-black text-forest-green dark:text-white leading-tight">
+        <section class="mb-16 border-l-[10px] border-saffron-yellow pl-8 py-3">
+            <h1 class="text-4xl lg:text-6xl font-black text-forest-green dark:text-white leading-tight">
                 সকল ফিচার ও রাইড
-            </h2>
+            </h1>
             <p class="mt-6 text-forest-green/70 dark:text-white/60 max-w-2xl text-lg lg:text-xl leading-relaxed">
                 আমাদের ঐতিহ্যবাহী থিম এবং প্রাকৃতিক সৌন্দর্যের এক অপূর্ব সমন্বয় উপভোগ করুন। হাই-থ্রিল রাইড থেকে শুরু
                 করে শান্ত প্রকৃতির সান্নিধ্য—সবই আছে এখানে।
             </p>
-        </div>
-
-
-
+        </section>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-<!-- number 1 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
-                <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor7.webp");'></div>
 
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img src="./image/AnondoNogor7.webp" alt="আনন্দনগর অ্যাডভেঞ্চার রোলারকোস্টার"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        অ্যাডভেঞ্চার রোলারকোস্টার</h3>
+                        অ্যাডভেঞ্চার রোলারকোস্টার
+                    </h3>
                     <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
                         রোমাঞ্চকর ট্রিপল লুপ এবং খাড়া ড্রপ সম্বলিত আমাদের সবচেয়ে জনপ্রিয় স্টিল কোস্টার।
                     </p>
                     <div
                         class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
-                       <div class="flex gap-2 items-center">
-                        <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
-                       </div>
-                       <div class="flex flex-col gap-2"><div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                        <i class="fa-solid fa-users text-primary"></i>
-                        <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                        <i class="fa-solid fa-clock text-primary"></i>
-                        <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
-                    </div></div>
+                        <div class="flex gap-2 items-center">
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-<!-- number 2 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
-                <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor9.webp");'></div>
+            </article>
 
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img src="./image/AnondoNogor9.webp" alt="সোয়ান বোট রাইডিং - নৌকা ভ্রমণ"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        সোয়ান বোট রাইডিং</h3>
+                        সোয়ান বোট রাইডিং
+                    </h3>
                     <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
                         পদ্ম পুকুরের বুক চিরে রাজহাঁস নৌকায় শান্ত ভ্রমণের এক অপূর্ব সুযোগ।
                     </p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
                         <div class="flex gap-2 items-center">
-                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
                         </div>
                         <div class="flex flex-col gap-2">
                             <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-users text-primary"></i>
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
                             </div>
                             <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-clock text-primary"></i>
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- number 3 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+            </article>
+
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
                 <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
-                  
+                    <img src="./image/AnondoNogor14webp.webp" alt="কিডস মিনি ট্রেন রাইড"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
                 </div>
                 <div class="p-8 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        কিডস মিনি ট্রেন</h3>
+                        কিডস মিনি ট্রেন
+                    </h3>
                     <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
                         ছোট্ট সোনামণিদের জন্য ইকো-গার্ডেন জোনের চারপাশে একটি রঙিন ট্রেন সফর।
                     </p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
                         <div class="flex gap-2 items-center">
-                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
                         </div>
                         <div class="flex flex-col gap-2">
                             <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-users text-primary"></i>
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
                             </div>
                             <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-clock text-primary"></i>
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- number 4 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
-                <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
-                  
-                </div>
-                <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        নাগর দোলা</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
-                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
-                    </p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
-                        <div class="flex gap-2 items-center">
-                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-users text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-clock text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <!-- number 5 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
-                <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
-                  
-                </div>
-                <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        নাগর দোলা</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
-                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
-                    </p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
-                        <div class="flex gap-2 items-center">
-                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-users text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-clock text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <!-- number 6 -->
-            <div class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
-                <div class="relative aspect-[16/10] overflow-hidden">
-                    <div class="w-full h-full bg-center bg-cover transition-transform duration-1000 group-hover:scale-110"
-                        style='background-image: url("./image/AnondoNogor14webp.webp");'></div>
-            
-                </div>
-                <div class="p-8 flex flex-col flex-grow">
-                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
-                        নাগর দোলা</h3>
-                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
-                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
-                    </p>
-                    <div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
-                        <div class="flex gap-2 items-center">
-                            <p>মূল্য :-</p> ‍<span>১২০ টাকা</span>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-users text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
-                                <i class="fa-solid fa-clock text-primary"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </article>
 
-     
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img src="./image/AnondoNogor14webp.webp" alt="নাগর দোলা - আনন্দনগর"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা
+                    </h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img src="./image/AnondoNogor14webp.webp" alt="ঐতিহ্যবাহী নাগর দোলা"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা (দক্ষিণ)
+                    </h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="ride-card flex flex-col rounded-premium overflow-hidden group border border-forest-green">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img src="./image/AnondoNogor14webp.webp" alt="নাগর দোলা ও গ্রামীণ মেলা"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy">
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-forest-green mb-4 group-hover:text-primary transition-colors">
+                        নাগর দোলা (উত্তর)
+                    </h3>
+                    <p class="text-forest-green/70 dark:text-white/60 mb-8 leading-relaxed">
+                        দর্শনার্থীদের জন্য ইকো-গার্ডেন জোনের পাশেই রয়েছে একটি বিশাল নাগর দোলা।
+                    </p>
+                    <div
+                        class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800 flex items-start justify-between">
+                        <div class="flex gap-2 items-center">
+                            <p class="font-semibold">মূল্য :</p> <span class="font-bold">১২০ টাকা</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-users text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১২+ বছর</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-forest-green/80 dark:text-white/80">
+                                <i class="fa-solid fa-clock text-primary" aria-hidden="true"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">১০:০০ - ০৬:০০</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </main>
 
-    <div id="main-footer"></div>
+    <footer id="main-footer"></footer>
 
 </body>
 
