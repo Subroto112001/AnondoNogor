@@ -1,0 +1,17 @@
+  @layer base {
+            body {
+                font-family: 'Noto Serif Bengali', serif;
+            }
+
+            .rounded-premium {
+                border-radius: 1.5rem;
+            }
+        }
+
+        .ride-card {
+            @apply border border-forest-green/10 transition-all duration-500 bg-white dark:bg-gray-900;
+        }
+
+        .ride-card:hover {
+            @apply shadow-[0_20px_50px_rgba(26, 67, 50, 0.15)] -translate-y-2 border-primary/30;
+        }
